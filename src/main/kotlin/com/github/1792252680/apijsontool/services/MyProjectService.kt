@@ -1,7 +1,7 @@
-package org.jetbrains.plugins.template.services
+package com.github.1792252680.apijsontool.services
 
 import com.intellij.openapi.project.Project
-import org.jetbrains.plugins.template.MyBundle
+import com.github.1792252680.apijsontool.MyBundle
 
 class MyProjectService(project: Project) {
 
