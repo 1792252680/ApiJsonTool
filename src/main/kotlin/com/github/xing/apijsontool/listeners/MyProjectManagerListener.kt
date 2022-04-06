@@ -1,9 +1,9 @@
-package com.github.1792252680.apijsontool.listeners
+package com.github.xing.apijsontool.listeners
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener
-import com.github.1792252680.apijsontool.services.MyProjectService
+import com.github.xing.apijsontool.services.MyProjectService
 
 internal class MyProjectManagerListener : ProjectManagerListener {
 

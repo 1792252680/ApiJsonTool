@@ -1,4 +1,4 @@
-package com.github.1792252680.apijsontool
+package com.github.xing.apijsontool
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

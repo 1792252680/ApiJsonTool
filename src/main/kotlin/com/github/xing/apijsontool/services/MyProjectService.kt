@@ -1,7 +1,7 @@
-package com.github.1792252680.apijsontool.services
+package com.github.xing.apijsontool.services
 
 import com.intellij.openapi.project.Project
-import com.github.1792252680.apijsontool.MyBundle
+import com.github.xing.apijsontool.MyBundle
 
 class MyProjectService(project: Project) {
 

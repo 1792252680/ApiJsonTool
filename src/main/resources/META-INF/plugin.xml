@@ -1,18 +1,18 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.1792252680.apijsontool</id>
+    <id>com.github.xing.apijsontool</id>
     <name>ApiJsonTool</name>
     <vendor>1792252680</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.1792252680.apijsontool.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.1792252680.apijsontool.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.github.xing.apijsontool.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.xing.apijsontool.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.1792252680.apijsontool.listeners.MyProjectManagerListener"
+        <listener class="com.github.xing.apijsontool.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>
