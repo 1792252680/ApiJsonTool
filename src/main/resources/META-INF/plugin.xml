@@ -15,4 +15,36 @@
         <listener class="org.jetbrains.plugins.template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <group
+                id="org.intellij.sdk.action.GroupedActions"
+                text="Xin Tool"
+                popup="true">
+            <add-to-group
+                    group-id="ToolsMenu"
+                    anchor="after"
+                    relative-to-action="com.xin.plugins.action.RespObjectAction"/>
+            <action id="com.xin.plugins.action.RespObjectAction"
+                    class="com.xin.plugins.action.RespObjectAction"
+                    text="Setting the Object Template"
+                    description="Config the xin tool">
+            </action>
+            <action id="com.xin.plugins.action.RespArrayAction"
+                    class="com.xin.plugins.action.RespArrayAction"
+                    text="Setting the Array Template"
+                    description="Config the xin tool">
+            </action>
+            <action id="com.xin.plugins.action.RespPageArrayAction"
+                    class="com.xin.plugins.action.RespPageArrayAction"
+                    text="Setting the Page Array Template"
+                    description="Config the xin tool">
+            </action>
+        </group>
+        <!--        <action id="com.xin.plugins.action.RespObjectActiontAction"-->
+        <!--                class="com.xin.plugins.action.RespObjectActiontAction"-->
+        <!--                text="Xin Tool"-->
+        <!--                description="Config the xin tool">-->
+        <!--            <add-to-group group-id="ToolsMenu" anchor="first"/>-->
+        <!--        </action>-->
+    </actions>
 </idea-plugin>
