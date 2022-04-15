@@ -7,8 +7,15 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>
+        <applicationConfigurable
+                parentId="tools"
+                instance="com.xin.plugins.settings.AppSettingsConfigurable"
+                id="org.intellij.sdk.settings.AppSettingsConfigurable"
+                displayName="SDK: Application Settings Example"/>
+        <!--        <applicationService serviceImplementation="org.jetbrains.plugins.template.services.MyApplicationService"/>-->
         <projectService serviceImplementation="org.jetbrains.plugins.template.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.xin.plugins.settings.AppSettingsState"/>
+
     </extensions>
 
     <applicationListeners>
